@@ -1,19 +1,45 @@
-function downloadResume(){
+function toggleChat(){
 
-alert("Resume download coming soon")
+let chat = document.getElementById("chatbox")
+
+if(chat.style.display === "block"){
+chat.style.display = "none"
+}
+else{
+chat.style.display = "block"
+}
 
 }
 
-function scrollToProjects(){
+function handleKey(e){
 
-document.getElementById("projects").scrollIntoView({
-behavior:"smooth"
-})
+if(e.key === "Enter"){
 
+let input =
+document.getElementById("userInput").value.toLowerCase()
+
+let response=""
+
+if(input.includes("skills")){
+response="Mahaboobbasha knows Python, AI, Power BI and Web Development"
 }
 
-function contactMe(){
+else if(input.includes("projects")){
+response="Major project: AI Driven Government Job Intelligence Platform"
+}
 
-window.location.href="mailto:mahaboobbashashaik671@gmail.com"
+else if(input.includes("contact")){
+response="You can contact through the form or email on this page"
+}
+
+else{
+response="Please check the portfolio sections"
+}
+
+alert("ShaikAI: "+response)
+
+document.getElementById("userInput").value=""
+
+}
 
 }
