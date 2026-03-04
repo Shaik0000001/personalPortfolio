@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<title>Shaik Mahaboob Basha Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahaboobbasha Shaik | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<div class="logo">ShaikAI Portfolio</div>
-
+<h1>Mahaboobbasha Shaik</h1>
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
@@ -20,54 +21,27 @@
 </header>
 
 <section class="hero">
-
-<div class="profile">
-<img src="profile.jpg" alt="Profile Photo">
-</div>
-
-<div class="intro">
-<h1>Hi I'm Shaik Mahaboob Basha</h1>
-<h2>Data Science Undergraduate</h2>
-
-<p>
-Data Science undergraduate with strong foundations in Python,
-SQL, statistics, and machine learning basics. Passionate about
-data analysis and building practical AI solutions.
-</p>
-
-<div class="buttons">
-<button onclick="downloadResume()">Resume</button>
-<button onclick="scrollToProjects()">Projects</button>
-<button onclick="contactMe()">Contact</button>
-</div>
-
-</div>
-
+<h2>AI & Data Enthusiast</h2>
+<p>Building intelligent solutions using AI, Python and Data Analytics.</p>
 </section>
 
 <section id="about">
 <h2>About Me</h2>
 <p>
-Currently pursuing B.Tech in Computer Science (Data Science)
-at Annamacharya Institute of Technology and Sciences.
-CGPA: 9.17
+I am a BTech student passionate about Artificial Intelligence,
+Data Analytics and building intelligent applications.
 </p>
 </section>
 
 <section id="skills">
-
 <h2>Skills</h2>
 
-<ul>
-<li>Python</li>
-<li>Java</li>
-<li>C</li>
-<li>Pandas</li>
-<li>NumPy</li>
-<li>Scikit-learn</li>
-<li>Matplotlib</li>
-<li>MySQL</li>
-</ul>
+<div class="skill">Python</div>
+<div class="skill">Power BI</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">AI & Data Analytics</div>
 
 </section>
 
@@ -75,36 +49,63 @@ CGPA: 9.17
 
 <h2>Projects</h2>
 
-<div class="project-card">
-<h3>Data Analysis with Python</h3>
-<p>Performed data cleaning and analysis using Pandas and NumPy.</p>
-</div>
-
-<div class="project-card">
-<h3>Power BI Netflix Dashboard</h3>
-<p>Built data visualization dashboard using Netflix dataset.</p>
-</div>
-
-<div class="project-card">
-<h3>Machine Learning Practice Models</h3>
-<p>Implemented ML models using Scikit-learn.</p>
+<div class="project">
+<h3>AI Driven Government Job Intelligence Platform</h3>
+<p>Platform that analyzes government job notifications and checks eligibility automatically.</p>
+<a href="https://github.com/Shaik0000001" target="_blank">View Project</a>
 </div>
 
 </section>
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2>Contact Me</h2>
 
-<p>Email: mahaboobbashashaik671@gmail.com</p>
-<p>Phone: +91-8639290631</p>
-<p>Location: Kadapa, Andhra Pradesh, India</p>
+<form action="https://formsubmit.co/shaikmahaboobbasha@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<p>Email: shaikmahaboobbasha@gmail.com</p>
+<p>
+GitHub:
+<a href="https://github.com/Shaik0000001">github.com/Shaik0000001</a>
+</p>
 
 </section>
 
-<footer>
-<p>© 2026 Shaik Mahaboob Basha</p>
-</footer>
+
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+WhatsApp Me
+</a>
+
+
+<div class="chatbot">
+
+<button onclick="toggleChat()">ShaikAI</button>
+
+<div id="chatbox">
+
+<p>Hi I am ShaikAI. Ask about skills, projects or contact.</p>
+
+<input
+type="text"
+id="userInput"
+placeholder="Ask something"
+onkeypress="handleKey(event)"
+>
+
+</div>
+
+</div>
+
 
 <script src="script.js"></script>
 
